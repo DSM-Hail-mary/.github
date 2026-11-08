@@ -50,8 +50,7 @@ flowchart LR
 
 | 레포 | 설명 | 스택 |
 |---|---|---|
-| [**Hail-mary-main**](https://github.com/DSM-Hail-mary/Hail-mary-main) | GStreamer + DeepStream 엣지 영상 파이프라인 (Camera → Caps → AI → Judge → Sink) | C++ · DeepStream |
-| [**Hail-mary-Camera**](https://github.com/DSM-Hail-mary/Hail-mary-Camera) | Jetson 엣지: 카메라 캡처, 탐지·판정, GPS, 기기 지표, 서버 전송 | Python · TensorRT |
+| [**Hail-mary-main**](https://github.com/DSM-Hail-mary/Hail-mary-main) | Jetson 엣지: GStreamer + DeepStream 탐지·판정 + `edge/` 서버 전송·GPS·기기 지표 (구 Hail-mary-Camera 통합) | C++ · DeepStream · Python |
 | [**Hail-mary-Server**](https://github.com/DSM-Hail-mary/Hail-mary-Server) | 엣지 수신(WebSocket)과 대시보드용 REST API | FastAPI · SQLite |
 | [**Hail-mary-Front**](https://github.com/DSM-Hail-mary/Hail-mary-Front) | 전주 위험 지도 대시보드 | React · TypeScript · Leaflet |
 
